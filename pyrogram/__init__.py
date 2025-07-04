@@ -15,8 +15,7 @@
 #
 #  You should have received a copy of the GNU Lesser General Public License
 #  along with Pyrogram.  If not, see <http://www.gnu.org/licenses/>.
-
-__version__ = "3.0.2"
+__version__ = "2.3.67"
 __license__ = "GNU Lesser General Public License v3.0 (LGPL-3.0)"
 __copyright__ = "Copyright (C) 2017-present Dan <https://github.com/delivrance>"
 
@@ -40,3 +39,19 @@ from .client import Client
 from .sync import idle, compose
 
 crypto_executor = ThreadPoolExecutor(1, thread_name_prefix="CryptoWorker")
+
+__all__ = [
+    "Client",
+    "idle",
+    "compose",
+    "crypto_executor",
+    "StopTransmission",
+    "StopPropagation",
+    "ContinuePropagation",
+    "raw",
+    "types",
+    "filters",
+    "handlers",
+    "emoji",
+    "enums",
+]
